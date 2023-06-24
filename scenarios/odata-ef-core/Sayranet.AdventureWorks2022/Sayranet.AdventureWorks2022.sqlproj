@@ -56,5 +56,37 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Person\" />
+    <Folder Include="Person\Tables\" />
+    <Folder Include="Security\" />
+    <Folder Include="Compares" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\User Defined Types\" />
+    <Folder Include="Person\XMLSchemaCollections\" />
+    <Folder Include="Sales\" />
+    <Folder Include="Sales\Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Person\Tables\Person.sql" />
+    <Build Include="Person\Tables\BusinessEntityAddress.sql" />
+    <Build Include="Person\Tables\BusinessEntity.sql" />
+    <Build Include="Person\Tables\AddressType.sql" />
+    <Build Include="Person\Tables\Address.sql" />
+    <Build Include="Person\Tables\PersonPhone.sql" />
+    <Build Include="Security\Person.sql" />
+    <Build Include="Person\Tables\PhoneNumberType.sql" />
+    <Build Include="dbo\User Defined Types\Phone.sql" />
+    <Build Include="dbo\User Defined Types\Name.sql" />
+    <Build Include="Person\XMLSchemaCollections\IndividualSurveySchemaCollection.sql" />
+    <Build Include="Person\XMLSchemaCollections\AdditionalContactInfoSchemaCollection.sql" />
+    <Build Include="dbo\User Defined Types\NameStyle.sql" />
+    <Build Include="Person\Tables\StateProvince.sql" />
+    <Build Include="Person\Tables\CountryRegion.sql" />
+    <Build Include="dbo\User Defined Types\Flag.sql" />
+    <Build Include="Sales\Tables\SalesTerritory.sql" />
+    <Build Include="Security\Sales.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Compares\SqlSchemaCompare.scmp" />
   </ItemGroup>
 </Project>

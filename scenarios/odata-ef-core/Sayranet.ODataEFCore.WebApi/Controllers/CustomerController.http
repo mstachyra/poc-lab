@@ -1,0 +1,16 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@hostname=localhost
+@port=44319
+@host={{hostname}}:{{port}}
+
+###
+GET https://{{host}}/odata/Customers?$top=2
+
+###
+GET https://{{host}}/odata/Customers?$top=2&$orderby=Id desc
+
+###
+GET https://{{host}}/odata/Customers?$top=2&$orderby=Id desc
+
+###
+GET https://{{host}}/odata/Customers?$top=2&$expand=Orders&$select=Name

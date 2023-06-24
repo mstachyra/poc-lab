@@ -1,0 +1,25 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@hostname=localhost
+@port=7167
+@host={{hostname}}:{{port}}
+
+###
+GET https://{{host}}/odata/Persons/$count
+
+###
+GET https://{{host}}/odata/Persons?$top=2
+
+###
+GET https://{{host}}/odata/Persons?$top=2&$orderby=BusinessEntityId desc
+
+###
+GET https://{{host}}/odata/Persons?$top=2&$select=FirstName
+
+###
+GET https://{{host}}/odata/Persons?$top=2&$expand=PersonPhone&$orderby=BusinessEntityId desc&$select=FirstName
+
+### API Person to compare
+GET https://{{host}}/api/persons
+
+### API Person to compare
+GET https://{{host}}/api/personsExt

@@ -8,9 +8,9 @@ Some examples use a Docker image whose definition is available from the reposito
 ## dbup-in-tests
 
 The purpose of this example was to test the possibility of preparing a SQL database for integration testing. Libraries used:
-- Testcontainers - Running image with MS SQL database engine.
-- EF Core - Migrations - Creating the database and structure 
-- Db-Up - Running additional SQL scripts with the execution log as in ef core migrations
+- [Testcontainers for .NET](https://dotnet.testcontainers.org/) - Running docker image from unit test with MS SQL database engine.
+- [EF Core](https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli) - Migrations - Creating the database and structure 
+- [Db-Up](https://dbup.readthedocs.io/en/latest/) - Running additional SQL scripts with the execution log as in ef core migrations
 
 More info: [Readme](/scenarios/dbup-in-tests/README.md)
 
@@ -20,4 +20,14 @@ A simple example of using the [OData](https://github.com/OData/AspNetCoreOData) 
 
 More info: [Readme](/scenarios/odata-ef-core/README.md)
 
+## workflow-lab
+
+TODO - Try and do some experiments with [ELSA](https://v3.elsaworkflows.io/) library. 
+> Elsa Workflows is a powerful and flexible execution engine, encapsulated as a set of open-source .NET libraries designed to infuse .NET applications with workflow capabilities. With Elsa, developers can weave logic directly into their systems, enhancing functionality and automation for a seamless user experience.
+
+## service-bus
+
+TODO experiments with libraries:
+- [Rebus](https://github.com/rebus-org/Rebus) - Rebus is a lean service bus implementation for .NET
+- [MassTransit](https://github.com/MassTransit/MassTransit) - MassTransit provides a developer-focused, modern platform for creating distributed applications without complexity.
 

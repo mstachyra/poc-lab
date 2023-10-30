@@ -31,3 +31,6 @@ TODO experiments with libraries:
 - [Rebus](https://github.com/rebus-org/Rebus) - Rebus is a lean service bus implementation for .NET
 - [MassTransit](https://github.com/MassTransit/MassTransit) - MassTransit provides a developer-focused, modern platform for creating distributed applications without complexity.
 
+## logging-lab
+
+TODO - Change the loglevel at runtime

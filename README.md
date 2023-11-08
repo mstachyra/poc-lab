@@ -25,10 +25,13 @@ More info: [Readme](/scenarios/odata-ef-core/README.md)
 TODO - Try and do some experiments with [ELSA](https://v3.elsaworkflows.io/) library. 
 > Elsa Workflows is a powerful and flexible execution engine, encapsulated as a set of open-source .NET libraries designed to infuse .NET applications with workflow capabilities. With Elsa, developers can weave logic directly into their systems, enhancing functionality and automation for a seamless user experience.
 
-## service-bus
+## rebus-lab
+
+- [Rebus](https://github.com/rebus-org/Rebus) - Rebus is a lean service bus implementation for .NET
+
+## masstransit-lab
 
 TODO experiments with libraries:
-- [Rebus](https://github.com/rebus-org/Rebus) - Rebus is a lean service bus implementation for .NET
 - [MassTransit](https://github.com/MassTransit/MassTransit) - MassTransit provides a developer-focused, modern platform for creating distributed applications without complexity.
 
 ## logging-lab

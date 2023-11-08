@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  rebuslab.modulea:
+    image: ${DOCKER_REGISTRY-}rebuslabmodulea
+    hostname: "rebuslabmodulea"
+    environment:
+      - ConnectionStrings__RabbitMq=amqp://rabbitmqhostname
+    build:
+      context: .
+      dockerfile: RebusLab.ModuleA/Dockerfile
+    depends_on:
+      - "rabbitmq"
+
+  rebuslab.moduleb:
+    image: ${DOCKER_REGISTRY-}rebuslabmoduleb
+    hostname: "rebuslabmoduleb"
+    environment:
+      - ConnectionStrings__RabbitMq=amqp://rabbitmqhostname
+    build:
+      context: .
+      dockerfile: RebusLab.ModuleB/Dockerfile
+    depends_on:
+      - "rabbitmq"
+
+  rabbitmq: # login guest:guest
+    image: rabbitmq:management
+    hostname: "rabbitmqhostname"
+    ports:
+    - "5672:5672" # amqp
+    - "15672:15672" # Portal managment
